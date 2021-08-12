@@ -37,7 +37,7 @@ CONFIG=$(bashio::jq "${CONFIG}" ".\"download-dir\"=\"${download_dir}\"")
 incomplete_dir_enabled=$(bashio::config 'incomplete_dir_enabled')
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir-enabled\"=\"${incomplete_dir_enabled}\"")
 
-incomplete_dir_enabled=$(bashio::config 'incomplete_dir')
+incomplete_dir=$(bashio::config 'incomplete_dir')
 CONFIG=$(bashio::jq "${CONFIG}" ".\"incomplete-dir\"=\"${incomplete_dir}\"")
 
 username=$(bashio::config 'username')
